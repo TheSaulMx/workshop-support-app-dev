@@ -1,0 +1,35 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    font-weight: bold;
+    color: darkgray
+}
+
+.navbar {
+    background-color: rgb(34, 39, 46);
+    border-color: rgb(34, 39, 46);
+    height: 3.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar ul li {
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 0.2rem;
+}
+
+.navbar ul li:hover {
+    background-color: #3d3e4b;
+}
+
+.navbar a {
+    text-decoration: none;
+}
