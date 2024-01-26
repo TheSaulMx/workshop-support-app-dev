@@ -1,1 +1,80 @@
-<p>dashboard works!</p>
+<div class="dashboard-container">
+
+    <header class="header">
+        <h1><strong>Sauluciones</strong></h1>
+    </header>
+
+    <mat-card class="info-card-pending">
+        <mat-card-title>
+            <h3><strong>Pending equipment</strong></h3>
+        </mat-card-title>
+        <mat-card-content class="info-card-container">
+            <p>4 from 10 equipment pending of repair</p>
+            <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+        </mat-card-content>
+    </mat-card>
+
+    <mat-card class="info-card-ready">
+        <mat-card-title>
+            <h3><strong>Equipment ready to delivery</strong></h3>
+        </mat-card-title>
+        <mat-card-content class="info-card-container">
+            <p>7 from 10 equipment ready</p>
+            <mat-progress-bar mode="determinate" value="70"></mat-progress-bar>
+        </mat-card-content>
+    </mat-card>
+
+    <mat-card class="info-card-extra">
+        <mat-card-title>
+            <h3><strong>Equipment ready to delivery</strong></h3>
+        </mat-card-title>
+        <mat-card-content class="info-card-container">
+            <p>7 from 10 equipment ready</p>
+            <mat-progress-bar mode="determinate" value="70"></mat-progress-bar>
+        </mat-card-content>
+    </mat-card>
+
+    <mat-card class="team-card">
+        <mat-card-title style="display: flex; justify-content: space-between; align-items: center;">
+            <h3 style="margin: 0;"><strong>Team</strong></h3>
+            <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+                <mat-icon>add</mat-icon>
+            </button>
+        </mat-card-title>
+        <mat-divider></mat-divider>
+        <mat-card-content>
+            <div style="display: flex; justify-content: space-between; align-items: end; margin: 0.5rem 0;">
+                <img src="../../../favicon.ico" width="48px" height="48px">
+                <p>Team member 1</p>
+                <p>Details</p>
+                <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+                    <mat-icon>more_vert</mat-icon>
+                </button>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: end; margin: 0.5rem 0;">
+                <img src="../../../favicon.ico" width="48px" height="48px">
+                <p>Team member 2</p>
+                <p>Details</p>
+                <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+                    <mat-icon>more_vert</mat-icon>
+                </button>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: end; margin: 0.5rem 0;">
+                <img src="../../../favicon.ico" width="48px" height="48px">
+                <p>Team member 3</p>
+                <p>Details</p>
+                <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+                    <mat-icon>more_vert</mat-icon>
+                </button>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: end; margin: 0.5rem 0;">
+                <img src="../../../favicon.ico" width="48px" height="48px">
+                <p>Team member 4</p>
+                <p>Details</p>
+                <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+                    <mat-icon>more_vert</mat-icon>
+                </button>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>

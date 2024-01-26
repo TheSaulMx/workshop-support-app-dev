@@ -1,0 +1,58 @@
+* {
+    color: darkgray
+}
+
+.dashboard-container {
+    display: grid;
+    grid-template-areas: "header header header"
+        "info-card-pending info-card-ready info-card-extra"
+        "none   none    team-card";
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2rem;
+}
+
+.header {
+    grid-area: header;
+}
+
+.info-card-pending,
+.info-card-ready,
+.info-card-extra {
+    margin: 2rem;
+    padding: 1rem;
+    width: 24rem;
+    height: 10rem;
+    background-color: transparent;
+    border-width: 1px;
+    border-color: darkgray;
+    justify-content: center;
+    justify-self: center;
+}
+
+.info-card-pending {
+    grid-area: info-card-pending;
+}
+
+.info-card-ready {
+    grid-area: info-card-ready;
+}
+
+.info-card-extra {
+    grid-area: info-card-extra;
+}
+
+.team-card {
+    grid-area: team-card;
+    width: 24rem;
+    height: 20rem;
+    padding: 1rem;
+    background-color: transparent;
+    border-width: 1px;
+    border-color: darkgray;
+    justify-self: center;
+}
+
+mat-progress-bar {
+    --mdc-linear-progress-track-height: 10px;
+  }
