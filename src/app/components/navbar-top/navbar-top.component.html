@@ -1,7 +1,10 @@
 <div class="navbar">
     <ul>
-        <li><a [routerLink]="['/dashboard']" roterLinkActive="active">Dashboard</a></li>
+        <li><a routerLink="/" roterLinkActive="active">WorkShop Support</a></li>
+        <hr />
+        <li><a routerLink="dashboard" roterLinkActive="active">Dashboard</a></li>
         <li>Hardware</li>
         <li>Feedback</li>
     </ul>
+    @if (currentRouteUrl != '/register-equipment') { <button class="register-equipment-button" mat-raised-button color="primary" routerLink="register-equipment">Register equipment</button>}
 </div>

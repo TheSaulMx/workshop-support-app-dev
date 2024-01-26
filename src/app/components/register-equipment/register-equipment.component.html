@@ -1,0 +1,97 @@
+<div class="equipmen-register-container">
+    <header>
+        <h2>Register new equimpent</h2>
+
+        <button class="register-button" mat-raised-button color="primary"
+            routerLink="register-equipment"><strong>Register
+                equipment</strong></button>
+    </header>
+
+    <mat-card class="equimpent-container">
+        <mat-card-content class="equimpent-content">
+            <div class="equimpent-forms">
+                <form>
+                    <h3><strong>Initial data</strong></h3>
+
+                    <mat-form-field appearance="outline" [color]="'accent'">
+                        <mat-label>Client name</mat-label>
+                        <input matInput>
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline" [color]="'accent'">
+                        <mat-label>Phone number</mat-label>
+                        <input matInput>
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline" [color]="'accent'">
+                        <mat-label>E-mail address</mat-label>
+                        <input matInput>
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline" [color]="'accent'">
+                        <mat-label>Choose a date</mat-label>
+                        <input matInput [matDatepicker]="picker">
+                        <mat-hint>MM/DD/YYYY</mat-hint>
+                        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                    </mat-form-field>
+                </form>
+
+                <form>
+                    <h3><strong>Equimpent data</strong></h3>
+
+                    <mat-form-field appearance="outline" [color]="'accent'"
+                        [hideRequiredMarker]="hideRequiredControl.value" [floatLabel]="getFloatLabelValue()">
+                        <mat-select required>
+                            <mat-option>-- None --</mat-option>
+                            <mat-option value="">Alcatel</mat-option>
+                            <mat-option value="">Motorola</mat-option>
+                            <mat-option value="">Samsung</mat-option>
+                            <mat-option value="">Iphone</mat-option>
+                            <mat-option value="">Xiaomi</mat-option>
+                        </mat-select>
+                        <mat-label>Marca</mat-label>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline" [color]="'accent'"
+                        [hideRequiredMarker]="hideRequiredControl.value" [floatLabel]="getFloatLabelValue()">
+                        <mat-select required>
+                            <mat-option>-- None --</mat-option>
+                            <mat-option value="">Modelo 1</mat-option>
+                            <mat-option value="">Modelo 2</mat-option>
+                            <mat-option value="">Modelo 3</mat-option>
+                            <mat-option value="">Modelo 4</mat-option>
+                            <mat-option value="">Modelo 5</mat-option>
+                        </mat-select>
+                        <mat-label>Model</mat-label>
+                    </mat-form-field>
+                </form>
+
+                <form action="">
+                    <mat-form-field appearance="outline" [color]="'accent'" class="example-full-width">
+                        <mat-label>Equimpent details</mat-label>
+                        <textarea matInput placeholder="Ex. The equipmen don't start..."></textarea>
+                    </mat-form-field>
+                </form>
+            </div>
+
+            <mat-card class="equipment-photos-container">
+                <mat-card-content>
+                    <aside>
+                        <h3><strong>Equipment photos</strong></h3>
+                        <mat-grid-list cols="2" rowHeight="2:1">
+                            <mat-grid-tile>1</mat-grid-tile>
+                            <mat-grid-tile>2</mat-grid-tile>
+                            <mat-grid-tile>3</mat-grid-tile>
+                            <mat-grid-tile>4</mat-grid-tile>
+                        </mat-grid-list>
+                    </aside>
+                </mat-card-content>
+            </mat-card>
+        </mat-card-content>
+    </mat-card>
+
+</div>

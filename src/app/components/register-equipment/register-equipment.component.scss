@@ -1,0 +1,53 @@
+* {
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.equipmen-register-container {
+    display: flexbox;
+    margin: 2rem 2rem;
+}
+
+.register-button {
+    margin: 0 1rem;
+}
+
+.equimpent-container {
+    background-color: transparent;
+    border-width: 1px;
+    border-color: darkgray;
+}
+
+.equimpent-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.equimpent-forms {
+    width: 60%;
+}
+
+.equipment-photos-container {
+    width: 40%;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: transparent;
+    border-width: 1px;
+    border-color: darkgray;
+}
+
+mat-form-field {
+    margin: 1rem;
+    width: 30rem;
+}
+
+mat-grid-tile {
+    background: gray;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
